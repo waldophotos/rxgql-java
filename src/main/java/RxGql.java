@@ -13,7 +13,7 @@ import com.google.gson.JsonParser;
 
 public final class RxGql {
   interface GraphQLService {
-    @GET("/gql/query/")
+    @GET("/gql/")
     Observable<Response<ResponseBody>> query(@Query("query") String query);
   }
 
